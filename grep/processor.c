@@ -31,3 +31,20 @@ void free_config(GrepConfig *cfg){
   //regfree(&cfg->regex) освобождает память выделенную под регулярное выражение
   // regex_compiled == 1
 }
+
+//Обрабатываем файл через process_file 
+//Должен читать построчно
+//Проверять каждую строку
+//Выводить совпадения, учитывая флаги
+void process_file(FILE *file, GrepConfig *cfg){
+  //file - указатель на открытый файл или stdin 
+  //cfg - указатель на структутру с настройками
+  char buffer[1024]; // Буфер для хранения одной строки 
+  int line_num = 0; //Счетчик номера строки 
+  int match_count = 0;//Кол-во совпадений 
+
+  while(fgets(buffer, sizeof(buffer), file)){ //Читает одну строку из файла 
+                                              //sizeof(buffer) - макс. кол-во символов 
+    line_num++;
+  }
+}
