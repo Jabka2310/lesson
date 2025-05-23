@@ -1,9 +1,9 @@
 #include <stdio.h>
-#include <stdio.h>
+#include <stdlib.h>
 
 void print_file(char* name);
 
-int main(int argc, char *argv[]){
+int main(int argc, char** argv){
   
   for(int i = 1; i < argc; i++){
     print_file(argv[i]);
@@ -11,16 +11,16 @@ int main(int argc, char *argv[]){
   return 0;
 }
 
-void print_file(char *name){
+void print_file(char* name){
   
-  FILE *f = fopen(name, "rd");
-
+  FILE *f = NULL;
+  f = fopen(name, "rd");
   if(f == NULL){
-    fprintf(stderr, "Чушка ебаная\n");
+    fprintf(stderr, "Ошибка открытия файла\n");
     return;
   }else{
-    int c = fgetc(f);
-    while(c != EOF){
+    int c;
+    while((c  = fgetc(f)) != EOF){
       putc(c, stdout);
       c = fgetc(f);
     }
