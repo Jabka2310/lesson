@@ -3,7 +3,8 @@
 #include "mystring.h"
 
 int main(void) {
-  const char *test = "Hello, world!";
-  printf("%zu\n", my_strlen(test));
+  char *str1 = "bananaban";
+  char *str2 = NULL;
+  printf("%d\n", my_strcmp(str1, str2));
   return 0;
 }

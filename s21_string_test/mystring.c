@@ -8,3 +8,78 @@ size_t my_strlen(const char *str) {
   }
   return lenght;
 }
+
+// char *my_strcpy(char *dest, const char *src) {
+//   char *result = dest;
+//   while (*src != '\0') {
+//     *dest = *src;
+//     dest++;
+//     src++;
+//   }
+//   return result;
+// }
+
+// int my_strcmp(const char *str1, const char *str2) {
+//   int result = 0;
+
+//   if (str1 == NULL || str2 == NULL) {
+//     result = -9999;  // Возвращаем -9999 если одна из строк NULL, мой код
+//     ошибки
+//   } else {
+//     while (*str1 != '\0' && *str2 != '\0' && result == 0) {
+//       result = *str1 - *str2;
+//       str1++;
+//       str2++;
+//     }
+//     if (result == 0) {
+//       result = *str1 - *str2;
+//     }
+//   }
+
+//   return result;
+// }
+
+char *my_strncpy(char *dest, const char *src, size_t n) {
+  char *result = NULL;
+  size_t i = 0;
+
+  if (dest != NULL && src != NULL) {
+    result = dest;
+    while (i < n && *src != '\0') {
+      *dest = *src;
+      dest++;
+      src++;
+      i++;
+    }
+
+    while (i < n) {
+      *dest = '\0';
+      dest++;
+      i++;
+    }
+  }
+
+  return result;
+}
+
+int my_strncmp(const char *str1, const char *str2, size_t n) {
+  int result = 0;
+  size_t i = 0;
+
+  if (str1 == NULL || str2 == NULL) {
+    result = -9999;  // Код ошибки для NULL указателей
+  } else {
+    while (i < n && *str1 != '\0' && *str2 != '\0' && result == 0) {
+      result = *str1 - *str2;
+      str1++;
+      str2++;
+      i++;
+    }
+
+    if (result == 0 && i < n) {
+      result = *str1 - *str2;
+    }
+  }
+
+  return result;
+}
