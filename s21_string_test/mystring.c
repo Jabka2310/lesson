@@ -97,3 +97,7 @@ void *my_memchr(const void *str, int c, size_t n) {
 
   return result;
 }
+
+void print_hello_world() {
+    printf("Привет, мир!\n");
+}
