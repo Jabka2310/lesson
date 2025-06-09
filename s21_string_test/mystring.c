@@ -98,7 +98,7 @@ void *my_memchr(const void *str, int c, size_t n) {
   return result;
 }
 
-int memcmp(const void *str1, const void *str2, size_t n) {
+int my_memcmp(const void *str1, const void *str2, size_t n) {
   int result = 0;
   const unsigned char *p1 = (const unsigned char *)str1;
   const unsigned char *p2 = (const unsigned char *)str2;
@@ -111,4 +111,3 @@ int memcmp(const void *str1, const void *str2, size_t n) {
 
   return result;
 }
-
