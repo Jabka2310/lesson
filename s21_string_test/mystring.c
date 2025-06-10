@@ -1,6 +1,6 @@
 #include "mystring.h"
 
-size_t my_strlen(const char *str) {
+size_t my_strlen(const char *str) { // Считает длинну строки, возвращает ее в size_t
   size_t lenght = 0;
   while (*str != '\0') {
     lenght++;
@@ -39,52 +39,43 @@ size_t my_strlen(const char *str) {
 //   return result;
 // }
 
-char *my_strncpy(char *dest, const char *src, size_t n) {
-  char *result = NULL;
+char *my_strncpy(char *dest, const char *src, size_t n) { // Копирует строку src в dest, возвращает dest
+  char *result = dest;
   size_t i = 0;
 
-  if (dest != NULL && src != NULL) {
-    result = dest;
-    while (i < n && *src != '\0') {
-      *dest = *src;
-      dest++;
-      src++;
-      i++;
-    }
+  while (i < n && *src != '\0') {
+    *dest = *src;
+    dest++;
+    src++;
+    i++;
+  }
 
-    while (i < n) {
-      *dest = '\0';
-      dest++;
-      i++;
-    }
+  while (i < n) {
+    *dest = '\0';
+    dest++;
+    i++;
   }
 
   return result;
 }
 
-int my_strncmp(const char *str1, const char *str2, size_t n) {
+int my_strncmp(const char *str1, const char *str2, size_t n) { // Сравнивает две строки, возвращает 0 если они равны, 1 если первая больше, -1 если вторая больше
   int result = 0;
   size_t i = 0;
-
-  if (str1 == NULL || str2 == NULL) {
-    result = -9999;  // Код ошибки для NULL указателей
-  } else {
-    while (i < n && *str1 != '\0' && *str2 != '\0' && result == 0) {
-      result = *str1 - *str2;
-      str1++;
-      str2++;
-      i++;
-    }
-
-    if (result == 0 && i < n) {
-      result = *str1 - *str2;
-    }
+  
+  while (i < n && str1[i] != '\0' && str2[i] != '\0' && result == 0) {
+    result = (unsigned char)str1[i] - (unsigned char)str2[i];
+    i++;
   }
-
+  
+  if (result == 0 && i < n) {
+    result = (unsigned char)str1[i] - (unsigned char)str2[i];
+  }
+  
   return result;
 }
 
-void *my_memchr(const void *str, int c, size_t n) {
+void *my_memchr(const void *str, int c, size_t n) { // Ищет первое вхождение символа c в строку str, возвращает указатель на этот символ или NULL если символ не найден
   void *result = NULL;
   const unsigned char *p = (const unsigned char *)str;
 
