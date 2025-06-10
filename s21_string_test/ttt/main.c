@@ -1,9 +1,10 @@
 #include <stdio.h>
-#include <string.h>
 #include <stdlib.h>
+#include <string.h>
 
-int main(void){
-  char *arr = "ello, woHrld!";
-  printf("%p\n", memchr(arr, 'H', 6));
- return 0;
+int main(void) {
+  int arr1[] = {1, 2, 3, 4, 5};
+  int arr2[3];
+  printf("%p\n", memcpy(arr2, arr1, 6));
+  return 0;
 }

@@ -1,6 +1,7 @@
 #include "mystring.h"
 
-size_t my_strlen(const char *str) { // Считает длинну строки, возвращает ее в size_t
+size_t my_strlen(
+    const char *str) {  // Считает длинну строки, возвращает ее в size_t
   size_t lenght = 0;
   while (*str != '\0') {
     lenght++;
@@ -9,37 +10,8 @@ size_t my_strlen(const char *str) { // Считает длинну строки,
   return lenght;
 }
 
-// char *my_strcpy(char *dest, const char *src) {
-//   char *result = dest;
-//   while (*src != '\0') {
-//     *dest = *src;
-//     dest++;
-//     src++;
-//   }
-//   return result;
-// }
-
-// int my_strcmp(const char *str1, const char *str2) {
-//   int result = 0;
-
-//   if (str1 == NULL || str2 == NULL) {
-//     result = -9999;  // Возвращаем -9999 если одна из строк NULL, мой код
-//     ошибки
-//   } else {
-//     while (*str1 != '\0' && *str2 != '\0' && result == 0) {
-//       result = *str1 - *str2;
-//       str1++;
-//       str2++;
-//     }
-//     if (result == 0) {
-//       result = *str1 - *str2;
-//     }
-//   }
-
-//   return result;
-// }
-
-char *my_strncpy(char *dest, const char *src, size_t n) { // Копирует строку src в dest, возвращает dest
+char *my_strncpy(char *dest, const char *src,
+                 size_t n) {  // Копирует строку src в dest, возвращает dest
   char *result = dest;
   size_t i = 0;
 
@@ -59,23 +31,29 @@ char *my_strncpy(char *dest, const char *src, size_t n) { // Копирует с
   return result;
 }
 
-int my_strncmp(const char *str1, const char *str2, size_t n) { // Сравнивает две строки, возвращает 0 если они равны, 1 если первая больше, -1 если вторая больше
+int my_strncmp(
+    const char *str1, const char *str2,
+    size_t n) {  // Сравнивает две строки, возвращает 0 если они равны, 1 если
+                 // первая больше, -1 если вторая больше
   int result = 0;
   size_t i = 0;
-  
+
   while (i < n && str1[i] != '\0' && str2[i] != '\0' && result == 0) {
     result = (unsigned char)str1[i] - (unsigned char)str2[i];
     i++;
   }
-  
+
   if (result == 0 && i < n) {
     result = (unsigned char)str1[i] - (unsigned char)str2[i];
   }
-  
+
   return result;
 }
 
-void *my_memchr(const void *str, int c, size_t n) { // Ищет первое вхождение символа c в строку str, возвращает указатель на этот символ или NULL если символ не найден
+void *my_memchr(
+    const void *str, int c,
+    size_t n) {  // Ищет первое вхождение символа c в строку str, возвращает
+                 // указатель на этот символ или NULL если символ не найден
   void *result = NULL;
   const unsigned char *p = (const unsigned char *)str;
 
@@ -89,7 +67,10 @@ void *my_memchr(const void *str, int c, size_t n) { // Ищет первое в�
   return result;
 }
 
-int my_memcmp(const void *str1, const void *str2, size_t n) {
+int my_memcmp(
+    const void *str1, const void *str2,
+    size_t n) {  // Сравнивает две области памяти, возвращает 0 если они равны,
+                 // 1 если первая больше, -1 если вторая больше
   int result = 0;
   const unsigned char *p1 = (const unsigned char *)str1;
   const unsigned char *p2 = (const unsigned char *)str2;
@@ -101,4 +82,18 @@ int my_memcmp(const void *str1, const void *str2, size_t n) {
   }
 
   return result;
+}
+
+void *my_memcpy(void *dest, const void *src,
+                size_t n) {  // Копирует n байт из src в dest, возвращает dest
+  char *d = (char *)dest;
+  const char *s = (const char *)src;
+
+  while (n--) {
+    *d++ = *s++;  // Порядок операций смотри ниже
+  }
+  //*d = *s;  Копирование байта из *s в *d
+  // d++;     Увеличение указателя dest
+  // s++;     Увеличение указателя src
+  return dest;
 }
