@@ -97,3 +97,11 @@ void *my_memcpy(void *dest, const void *src,
   // s++;     Увеличение указателя src
   return dest;
 }
+
+void *memset(void *str, int c, size_t n) {
+  char *p = (char *)str;
+  while (n--) {
+    *p++ = (char)c;
+  }
+  return str;
+}
