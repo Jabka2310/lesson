@@ -98,7 +98,8 @@ void *my_memcpy(void *dest, const void *src,
   return dest;
 }
 
-void *memset(void *str, int c, size_t n) {
+void *my_memset(void *str, int c,
+                size_t n) {  // Заполняет память символом c, возвращает str
   char *p = (char *)str;
   while (n--) {
     *p++ = (char)c;
