@@ -1,7 +1,8 @@
 #ifndef MYSTRING_H
 #define MYSTRING_H
 
-#include <stddef.h>  // Для типа size_t
+#include <stddef.h>  // Для типа size_t, потом заменю на s21_size_t
+                     // Потом сделать макрос для NULL
 
 size_t my_strlen(const char *str);
 char *my_strncpy(char *dest, const char *src, size_t n);
