@@ -15,9 +15,18 @@
 //   return 0;
 // }
 
-int main() {
-  char *str = "Hello world!";
-  memset(str, 'H', 5);
-  printf("%s\n", str);
+// int main() {
+//   char *str = "Hello world!";
+//   memset(str, 'H', 5);
+//   printf("%s\n", str);
+//   return 0;
+// }
+
+
+int main(){
+  char str1[] = "Hello";
+  char str2[] = "World"; 
+  strncat(str1, str2, 5);
+  printf("%s\n", str1);
   return 0;
 }
