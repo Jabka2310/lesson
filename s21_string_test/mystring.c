@@ -112,22 +112,43 @@ void *my_memset(void *str, int c,
   return str;
 }
 
-char *my_strncat(char *dest, const char *src, size_t n) {
-    char *d = dest;
-    
-    // Доходим до конца строки
-    while (*d != '\0') {
-        d++;
+char *my_strncat(char *dest, const char *src,
+                 size_t n) {  // Конкатенирует две строки, возвращает dest
+  char *d = dest;
+
+  // Доходим до конца строки
+  while (*d != '\0') {
+    d++;
+  }
+
+  // Копируем не более n символов
+  while (n > 0 && *src != '\0') {
+    *d++ = *src++;
+    n--;
+  }
+
+  // Добавляем завершающий нуль
+  *d = '\0';
+
+  return dest;
+}
+
+char *my_strchr(const char *str, int c) {
+  if (str == NULL) {
+    return NULL;
+  }
+
+  while (*str != '\0') {
+    if (*str == (char)c) {
+      return (char *)str;
     }
-    
-    // Копируем не более n символов
-    while (n > 0 && *src != '\0') {
-        *d++ = *src++;
-        n--;
-    }
-    
-    // Добавляем завершающий нуль
-    *d = '\0';
-    
-    return dest;
+    str++;
+  }
+
+  // Проверяем случай, когда c == '\0'
+  if ((char)c == '\0') {
+    return (char *)str;
+  }
+
+  return NULL;
 }

@@ -22,11 +22,17 @@
 //   return 0;
 // }
 
+// int main(){
+//   char str1[] = "Hello";
+//   char str2[] = "World";
+//   strncat(str1, str2, 5);
+//   printf("%s\n", str1);
+//   return 0;
+// }
 
-int main(){
+int main(void) {
   char str1[] = "Hello";
-  char str2[] = "World"; 
-  strncat(str1, str2, 5);
-  printf("%s\n", str1);
+  char *str2 = NULL;
+  printf("%s\n", strncat(str1, str2, 0));
   return 0;
 }
