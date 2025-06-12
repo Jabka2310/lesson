@@ -9,7 +9,7 @@ size_t my_strlen(
   }
   return lenght;
 }
-
+// ------------------------------------------------------------------------------------------------
 char *my_strncpy(char *dest, const char *src,
                  size_t n) {  // Копирует строку src в dest, возвращает dest
   char *result = dest;
@@ -30,7 +30,7 @@ char *my_strncpy(char *dest, const char *src,
 
   return result;
 }
-
+// ------------------------------------------------------------------------------------------------
 int my_strncmp(
     const char *str1, const char *str2,
     size_t n) {  // Сравнивает две строки, возвращает 0 если они равны, 1 если
@@ -49,7 +49,7 @@ int my_strncmp(
 
   return result;
 }
-
+// ------------------------------------------------------------------------------------------------
 void *my_memchr(
     const void *str, int c,
     size_t n) {  // Ищет первое вхождение символа c в строку str, возвращает
@@ -66,7 +66,7 @@ void *my_memchr(
 
   return result;
 }
-
+// ------------------------------------------------------------------------------------------------
 int my_memcmp(
     const void *str1, const void *str2,
     size_t n) {  // Сравнивает две области памяти, возвращает 0 если они равны,
@@ -83,7 +83,7 @@ int my_memcmp(
 
   return result;
 }
-
+// ------------------------------------------------------------------------------------------------
 void *my_memcpy(void *dest, const void *src,
                 size_t n) {  // Копирует n байт из src в dest, возвращает dest
   char *d = (char *)dest;
@@ -97,7 +97,7 @@ void *my_memcpy(void *dest, const void *src,
   // s++;     Увеличение указателя src
   return dest;
 }
-
+// ------------------------------------------------------------------------------------------------
 void *my_memset(void *str, int c,
                 size_t n) {  // Заполняет память символом c, возвращает str
   char *p = (char *)str;
@@ -107,11 +107,11 @@ void *my_memset(void *str, int c,
     // Так как первое хранится в другой области памяти, а не в стеке
     //  Так же если использовать тип int, то будет ошибка, так как int занимает
     //  4 байта, а char 1 байт Помимо прочего, если задать 10 байт, и задать их
-    //  нулями - то зачиться 3 целых байта вместо 2.5
+    //  нулями - то зачиститься 3 целых байта вместо 2.5
   }
   return str;
 }
-
+// ------------------------------------------------------------------------------------------------
 char *my_strncat(char *dest, const char *src,
                  size_t n) {  // Конкатенирует две строки, возвращает dest
   char *d = dest;
@@ -132,7 +132,7 @@ char *my_strncat(char *dest, const char *src,
 
   return dest;
 }
-
+// ------------------------------------------------------------------------------------------------
 char *my_strchr(
     const char *str,
     int c) {  // Ищет первое вхождение символа c в строку str, возвращает
@@ -152,7 +152,7 @@ char *my_strchr(
 
   return result;
 }
-
+// ------------------------------------------------------------------------------------------------
 size_t my_strcspn(
     const char *str1,
     const char *str2) {  // Ищет первое вхождение символа из str2 в str1,
@@ -167,7 +167,7 @@ size_t my_strcspn(
 
   return result;
 }
-
+// ------------------------------------------------------------------------------------------------
 char *my_strpbrk(const char *str1,
                  const char *str2) {  // Ищет первое вхождение символа из str2 в
                                       // str1, возвращает указатель на этот
@@ -187,7 +187,7 @@ char *my_strpbrk(const char *str1,
 
   return result;
 }
-
+// ------------------------------------------------------------------------------------------------
 char *my_strrchr(
     const char *str,
     int c) {  // Ищет последнее вхождение символа c в строку str, возвращает
@@ -207,8 +207,12 @@ char *my_strrchr(
 
   return (char *)last;
 }
-
-char *my_strstr(const char *haystack, const char *needle) {
+// ------------------------------------------------------------------------------------------------
+char *my_strstr(
+    const char *haystack,
+    const char *needle) {  // Ищет первое вхождение строки needle в строку
+                           // haystack, возвращает указатель на это вхождение
+                           // или NULL если оно не найдено
   char *result = NULL;
 
   if (*needle == '\0') {
@@ -233,3 +237,78 @@ char *my_strstr(const char *haystack, const char *needle) {
 
   return result;
 }
+// ------------------------------------------------------------------------------------------------
+char *my_strtok(char *str, const char *delim) {
+  static char *last = NULL;
+  char *result = NULL;
+
+  if (str != NULL) {
+    last = str;
+  }
+
+  if (last != NULL) {
+    // Пропускаем начальные разделители
+    while (*last != '\0' && my_strchr(delim, *last) != NULL) {
+      last++;
+    }
+
+    if (*last != '\0') {
+      result = last;
+
+      // Ищем следующий разделитель
+      while (*last != '\0' && my_strchr(delim, *last) == NULL) {
+        last++;
+      }
+
+      if (*last != '\0') {
+        *last = '\0';
+        last++;
+      } else {
+        last = NULL;
+      }
+    } else {
+      last = NULL;
+    }
+  }
+
+  return result;
+}
+// ------------------------------------------------------------------------------------------------
+// char *my_strtok(char *str, const char *delim) {
+//   static char *last = NULL;
+//   char *token_start;
+
+//   // Если str == NULL, продолжаем с last
+//   if (str == NULL) {
+//     str = last;
+//     if (str == NULL) {
+//       return NULL;  // Нет строки для обработки
+//     }
+//   }
+
+//   // Пропускаем начальные разделители
+//   while (*str != '\0' && strchr(delim, *str) != NULL) {
+//     str++;
+//   }
+
+//   if (*str == '\0') {
+//     last = NULL;
+//     return NULL;  // Больше токенов нет
+//   }
+
+//   token_start = str;
+
+//   // Ищем конец токена
+//   while (*str != '\0' && strchr(delim, *str) == NULL) {
+//     str++;
+//   }
+
+//   if (*str != '\0') {
+//     *str = '\0';  // Обрезаем токен
+//     last = str + 1;  // Сохраняем указатель на следующий символ
+//   } else {
+//     last = NULL;  // Больше токенов не будет
+//   }
+
+//   return token_start;
+// }
