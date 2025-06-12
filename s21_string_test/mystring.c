@@ -280,15 +280,21 @@ char *s21_strtok(
 }
 // ------------------------------------------------------------------------------------------------
 
-// char *s21_strerror(int errnum) { // Возвращает строку с ошибкой errnum
-//     static char unknown_error[100];
+static char s21_unknown_error[64] = {0};
 
-//     if (errnum < 0 || errnum >= MAX_ERROR) {
-//         #ifdef __APPLE__
-//         snprintf(unknown_error, sizeof(unknown_error), "Unknown error: %d",
-//         errnum); #else snprintf(unknown_error, sizeof(unknown_error),
-//         "Unknown error %d", errnum); #endif return unknown_error;
-//     }
+char *s21_strerror(int errnum) {  // Возвращает строку с ошибкой errnum
+  char *result = "Unknown error";
 
-//     return (char *)error_messages[errnum];
-// }
+  if (errnum >= 0 && errnum <= (int)S21_MAX_ERRNO) {
+    const char *msg = s21_error_messages[errnum];
+    if (msg) {
+      result = (char *)msg;
+    }
+  } else {
+    snprintf(s21_unknown_error, sizeof(s21_unknown_error), "Unknown error: %d",
+             errnum);
+    result = s21_unknown_error;
+  }
+
+  return result;
+}
