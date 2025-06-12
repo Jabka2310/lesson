@@ -13,4 +13,8 @@ void *my_memcpy(void *dest, const void *src, size_t n);
 void *my_memset(void *str, int c, size_t n);
 char *my_strncat(char *dest, const char *src, size_t n);
 char *my_strchr(const char *str, int c);
+size_t my_strcspn(const char *str1, const char *str2);
+char *my_strpbrk(const char *str1, const char *str2);
+char *my_strrchr(const char *str, int c);
+char *my_strstr(const char *haystack, const char *needle);
 #endif

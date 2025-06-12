@@ -133,20 +133,103 @@ char *my_strncat(char *dest, const char *src,
   return dest;
 }
 
-char *my_strchr(const char *str, int c) { // Ищет первое вхождение символа c в строку str, возвращает указатель на этот символ или NULL если символ не найден
-    char *result = NULL;
-    
-    while (*str != '\0' && result == NULL) {
-        if (*str == (unsigned char)c) {
-            result = (char *)str;
-        }
-        str++;
+char *my_strchr(
+    const char *str,
+    int c) {  // Ищет первое вхождение символа c в строку str, возвращает
+              // указатель на этот символ или NULL если символ не найден
+  char *result = NULL;
+
+  while (*str != '\0' && result == NULL) {
+    if (*str == (unsigned char)c) {
+      result = (char *)str;
     }
-    
-    if (result == NULL && (unsigned char)c == '\0') {
-        result = (char *)str;
-    }
-    
-    return result;
+    str++;
+  }
+
+  if (result == NULL && (unsigned char)c == '\0') {
+    result = (char *)str;
+  }
+
+  return result;
 }
 
+size_t my_strcspn(
+    const char *str1,
+    const char *str2) {  // Ищет первое вхождение символа из str2 в str1,
+                         // возвращает количество символов до этого вхождения
+  size_t result = 0;
+  const char *p1 = str1;
+
+  while (*p1 != '\0' && my_strchr(str2, *p1) == NULL) {
+    p1++;
+    result++;
+  }
+
+  return result;
+}
+
+char *my_strpbrk(const char *str1,
+                 const char *str2) {  // Ищет первое вхождение символа из str2 в
+                                      // str1, возвращает указатель на этот
+                                      // символ или NULL если символ не найден
+  char *result = NULL;
+
+  while (*str1 != '\0' && result == NULL) {
+    const char *p2 = str2;
+    while (*p2 != '\0' && result == NULL) {
+      if (*str1 == *p2) {
+        result = (char *)str1;
+      }
+      p2++;
+    }
+    str1++;
+  }
+
+  return result;
+}
+
+char *my_strrchr(
+    const char *str,
+    int c) {  // Ищет последнее вхождение символа c в строку str, возвращает
+              // указатель на этот символ или NULL если символ не найден
+  const char *last = NULL;
+
+  while (*str != '\0') {
+    if (*str == (unsigned char)c) {
+      last = str;
+    }
+    str++;
+  }
+
+  if ((unsigned char)c == '\0') {
+    last = str;
+  }
+
+  return (char *)last;
+}
+
+char *my_strstr(const char *haystack, const char *needle) {
+  char *result = NULL;
+
+  if (*needle == '\0') {
+    result = (char *)haystack;
+  } else {
+    while (*haystack != '\0' && result == NULL) {
+      const char *p1 = haystack;
+      const char *p2 = needle;
+
+      while (*p1 != '\0' && *p2 != '\0' && *p1 == *p2) {
+        p1++;
+        p2++;
+      }
+
+      if (*p2 == '\0') {
+        result = (char *)haystack;
+      }
+
+      haystack++;
+    }
+  }
+
+  return result;
+}
