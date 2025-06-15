@@ -280,6 +280,26 @@ char *s21_strtok(
 }
 // ------------------------------------------------------------------------------------------------
 
+// static char s21_unknown_error[64] = {0};
+
+// char *s21_strerror(int errnum) {  // Возвращает строку с ошибкой errnum
+//   char *result = "Unknown error";
+
+//   if (errnum >= 0 && errnum <= (int)S21_MAX_ERRNO) {
+//     const char *msg = s21_error_messages[errnum];
+//     if (msg) {
+//       result = (char *)msg;
+//     }
+//   } else {
+//     snprintf(s21_unknown_error, sizeof(s21_unknown_error), "Unknown error:
+//     %d",
+//              errnum);
+//     result = s21_unknown_error;
+//   }
+
+//   return result;
+// }
+
 static char s21_unknown_error[64] = {0};
 
 char *s21_strerror(int errnum) {  // Возвращает строку с ошибкой errnum
@@ -291,8 +311,8 @@ char *s21_strerror(int errnum) {  // Возвращает строку с оши
       result = (char *)msg;
     }
   } else {
-    snprintf(s21_unknown_error, sizeof(s21_unknown_error), "Unknown error: %d",
-             errnum);
+    sprintf(s21_unknown_error, "Unknown error: %d",
+            errnum);  // Замена snprintf на sprintf
     result = s21_unknown_error;
   }
 
