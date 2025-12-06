@@ -1,0 +1,2 @@
+0 0 * * * /usr/sbin/logwatch --detail High --mailto your-email@gmail.com --subject "Daily System Log Report" --output mail --format html --range yesterday
+
