@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="1ba4a73a-4299-431c-a9b9-1dc118ee2af5" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ccode_on_c/a.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lesson/.clang-format" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lesson/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lesson/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lesson/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lesson/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lesson/.zshrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lesson/HelloWorld.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lesson/SQL/union.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lesson/ccode_on_c/.vscode/launch.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lesson/ccode_on_c/.vscode/tasks.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lesson/ccode_on_c/a.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lesson/ccode_on_c/lesson" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lesson/ccode_on_c/lesson.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lesson/ccode_on_c/lesson.dSYM/Contents/Info.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lesson/ccode_on_c/lesson.dSYM/Contents/Resources/DWARF/lesson" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lesson/ccode_on_c/lesson2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lesson/ccode_on_c/lesson2.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lesson/ccode_on_c/lesson2.dSYM/Contents/Info.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lesson/ccode_on_c/lesson2.dSYM/Contents/Resources/DWARF/lesson2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lesson/ccode_on_c/lesson3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lesson/ccode_on_c/lesson3.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lesson/ccode_on_c/lesson3.dSYM/Contents/Info.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lesson/ccode_on_c/lesson3.dSYM/Contents/Resources/DWARF/lesson3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lesson/ccode_on_c/lessontest.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lesson/code_on_c_WI/.vscode/launch.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lesson/code_on_c_WI/.vscode/settings.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lesson/code_on_c_WI/.vscode/tasks.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lesson/code_on_c_WI/a.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lesson/code_on_c_WI/lesson.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lesson/code_on_c_WI/lesson.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lesson/code_on_c_WI/lesson3.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lesson/code_on_c_WI/lesson3.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lesson/code_on_c_WI/lesson31.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lesson/code_on_c_WI/lesson31.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lesson/code_on_c_WI/lesson34.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lesson/code_on_c_WI/lesson34.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lesson/code_on_c_WI/lesson4.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lesson/code_on_c_WI/lesson4.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lesson/code_on_c_WI/lessonCCC.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lesson/code_on_c_WI/lessonCCC.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lesson/code_on_c_WI/lessonRu.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lesson/code_on_c_WI/lessonRu.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lesson/code_on_c_WI/lesson_34.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lesson/code_on_c_WI/lessonif.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lesson/code_on_c_WI/lex.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lesson/code_on_c_WI/testtest.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lesson/grep/1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lesson/grep/2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lesson/grep/3.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lesson/grep/a.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lesson/grep/main.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lesson/kitty/current-theme.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lesson/kitty/kitty.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lesson/kitty/kitty.conf.bak" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lesson/lesson.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lesson/myC/1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lesson/myC/2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lesson/myC/3.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lesson/myC/a.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lesson/myC/cat.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lesson/myC/cat/h.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lesson/myC/cat/main.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lesson/myC/cat/s21_cat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lesson/myC/cat/test.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lesson/myC/s21_cat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lesson/my_lix/nvim/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lesson/my_lix/nvim/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lesson/my_lix/nvim/init.lua" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lesson/my_lix/nvim/lazy-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lesson/my_lix/nvim/lazyvim.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lesson/my_lix/nvim/lua/config/autocmds.lua" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lesson/my_lix/nvim/lua/config/keymaps.lua" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lesson/my_lix/nvim/lua/config/lazy.lua" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lesson/my_lix/nvim/lua/config/options.lua" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lesson/my_lix/nvim/lua/plugins/example.lua" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lesson/my_lix/nvim/stylua.toml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lesson/nvim/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lesson/nvim/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lesson/nvim/init.lua" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lesson/nvim/lazy-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lesson/nvim/lazyvim.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lesson/nvim/lua/config/autocmds.lua" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lesson/nvim/lua/config/keymaps.lua" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lesson/nvim/lua/config/lazy.lua" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lesson/nvim/lua/config/options.lua" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lesson/nvim/lua/plugins/example.lua" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lesson/nvim/stylua.toml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lesson/revers_arr.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lesson/testo/.clang-format" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lesson/testo/README_log_monitoring.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lesson/testo/a.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lesson/testo/cron.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lesson/testo/get_all_info.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lesson/testo/main.cf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lesson/testo/setup_external_smtp.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lesson/testo/setup_log_monitoring.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lesson/testo/sshd_config" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lesson/testo/test.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lesson/testo/user_management.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lesson/tr.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lesson/zsh.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lesson/Допустим си.rtfd/TXT.rtf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lesson/Допустим си.rtfd/comment.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lesson/Допустим си.rtfd/l2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lesson/Допустим си.rtfd/l3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lesson/Допустим си.rtfd/l4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lesson/Допустим си.rtfd/l5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lesson/Допустим си.rtfd/l8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lesson/Допустим си.rtfd/obyavlenie_peremennoy.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lesson/Допустим си.rtfd/printf.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lesson/Допустим си.rtfd/printf_mf.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lesson/Допустим си.rtfd/printf_work.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lesson/Допустим си.rtfd/scanf.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lesson/Допустим си.rtfd/shema_raboty_programmy.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lesson/Допустим си.rtfd/shema_raboty_programmy2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lesson/Допустим си.rtfd/sintaksis_obyavlenie_peremennoy.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lesson/Допустим си.rtfd/streams.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lesson/Некий ГИТ.rtfd/TXT.rtf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lesson/Подсказки по строке линухи.rtf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lesson/Скрипты bash.rtf" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
+  <component name="ProjectId" id="36UcDxCSwEvQUqrr9UoJ5p2CRgP" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.HelloWorld.executor": "Run",
+    "Application.zad1_1.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "//wsl.localhost/ubuntu/home/tapok6/lesson",
+    "onboarding.tips.debug.path": "//wsl.localhost/ubuntu/home/tapok6/lesson2/src/Main.java",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "project.kotlinCompiler"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="zad1_1" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="lesson" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1ba4a73a-4299-431c-a9b9-1dc118ee2af5" name="Changes" comment="" />
+      <created>1765064476167</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1765064476167</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/../lesson2/src/Main.java</url>
+          <line>11</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
