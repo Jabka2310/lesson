@@ -1,9 +1,15 @@
+import java.util.*;
+
 public class test {
     public static void main(String[] args) {
-        int count = 0;
-        for (int i = 0; i < 100; i++) {
-            count += i;
+        Scanner scanner = new Scanner(System.in);
+        int a = scanner.nextInt();
+        switch (a) {
+            case 3:
+                System.out.println("3");
+                break;
+            default:
+                break;
         }
-        System.out.println(count);
     }
 }
